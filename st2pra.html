@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experiment 08</title>
+    <style>
+        body{
+            margin: 20px;
+            font-family: Arial,sans-serif;
+            background-color: #f9f9f9;
+        }
+        .container{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card{
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,1);
+            width: 220px;
+            text-align: center;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .avtar{
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background-color: rgb(49, 49, 125);
+          margin: 0 auto 12px;
+          overflow: hidden; /* MOST IMPORTANT */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .avtar img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        .name{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .detail{
+            color: #555;
+        }
+        .some-text{
+            font-weight: 700;
+            height: 60px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <center><h2>Student Profile Card</h2></center>
+
+    <div class="container">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <div class="avtar">
+                <img src="https://preview.redd.it/who-the-fuck-is-neeraj-pepsu-v0-aq2lm3l3z1ne1.jpeg?format=pjpg&auto=webp&s=74c0a2c19e57fc8ddeca8d23163d32d353706aa1" alt="Neeraj Photo">
+            </div>
+            <div class="name">NEERAJ PEPSU</div>
+            <div class="detail">B.tech - CSE</div>
+            <div class="detail">Roll No. 2025b018434</div>
+            <div class="detail">1st year</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <div class="avtar">
+                <img src="anurag" alt="IPS">
+            </div>
+            <div class="name">Anurag</div>
+            <div class="detail">B.tech - CSE</div>
+            <div class="detail">Roll No. 2025b018765</div>
+            <div class="detail">1st year</div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <div class="avtar">
+                <img src="make" alt="ansh">
+            </div>
+            <div class="name">Ansh</div>
+            <div class="detail">B.tech - CSE</div>
+            <div class="detail">Roll No. 2025b01011011</div>
+            <div class="detail">1st year</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
