@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Product Grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: #eaeaea;
+      padding: 20px;
+      border: 2px solid #444;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Grid layout */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #000;
+    }
+
+    /* Tablet: 2 columns */
+    @media (max-width: 1024px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile: 1 column */
+    @media (max-width: 600px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Responsive Product Grid</h1>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/40" alt="Product 1" />
+        <h3>Product 1</h3>
+        <p>High-quality item with great features.</p>
+        <p class="price">₹499</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/40" alt="Product 2" />
+        <h3>Product 2</h3>
+        <p>Durable and stylish for daily use.</p>
+        <p class="price">₹799</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/40" alt="Product 3" />
+        <h3>Product 3</h3>
+        <p>Lightweight and comfortable.</p>
+        <p class="price">₹1,299</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/40" alt="Product 4" />
+        <h3>Product 4</h3>
+        <p>Trendy design with premium quality.</p>
+        <p class="price">₹999</p>
+      </div>
+    </div>
+  </div>
+  
+  <div style=" position:fixed; bottom: 10px; left: 50%;">
+    <p>Anurag bhadana</p>
+    <p>CSE 14</p>
+    <p>2025B01011085</p>
+  </div>  
+  
+</body>
+</html>

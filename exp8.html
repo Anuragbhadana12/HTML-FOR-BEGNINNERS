@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 8 - Student Profile Card</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            
+        }
+        
+
+        /* Container using Flexbox */
+        .container {
+            display: flex;
+            justify-content: center;     /* center cards horizontally */
+            align-items: center;         /* center cards vertically */
+            gap: 30px;                   /* space between cards */
+            margin-top: 50px;
+        }
+
+        /* Profile Card */
+        .card {
+            width: 200px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Circle Avatar */
+        .avatar {
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .details {
+            font-size: 13px;
+            margin-top: 5px;
+            color: #555;
+        }
+
+        /* Output box border */
+        .output-box {
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+            
+            
+        
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="output-box">
+        <div class="container">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="avatar">JK</div>
+                <div class="name">Yadav</div>
+                <div class="details">B.Tech - CSE</div>
+                <div class="details">Roll No: 21CS007</div>
+                <div class="details">1st Year</div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="avatar">AR</div>
+                <div class="name">Anurag gujjar </div>
+                <div class="details">B.Tech - CSE</div>
+                <div class="details">Roll No: 21CSE012</div>
+                <div class="details">1st Year</div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="avatar">RK</div>
+                <div class="name">Rohit </div>
+                <div class="details">B.Tech - ECE</div>
+                <div class="details">Roll No: 21EC009</div>
+                <div class="details">1st Year</div>
+            </div>
+
+        </div>
+    </div>
+    <div style=" position:fixed; bottom: 10px; left: 50%;">
+        <p>Anurag bhadana</p>
+        <p>CSE 14</p>
+        <p>2025B01011085</p>
+    </div>
+
+</body>
+</html>

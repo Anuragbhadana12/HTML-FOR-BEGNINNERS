@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 7 - Navigation Menu</title>
+
+    <style>
+        /* Page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header (block element) */
+        .header {
+            display: block;
+            width: 100%;
+            background-color: #d9d9d9;
+            text-align: center;
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Navigation container */
+        .nav {
+            margin: 10px;
+        }
+
+        /* Navigation links using float */
+        .nav a {
+            margin-left: 10px;
+            
+            text-decoration: none;
+            color: blue;
+            background-color: #cce5ff;
+            padding: 8px 12px;
+            margin-right: 5px;
+            border: 1px solid #999;
+            display: inline-block;
+        }
+
+        /* Second row navigation */
+        .nav2 a {
+            margin-top:10px;
+            
+            
+            text-decoration: none;
+            color: green;
+            background-color: #ccffcc;
+            padding: 8px 12px;
+            margin-right: 5px;
+            border: 1px solid #999;
+            display: inline-block;
+        }
+
+        /* Clear float */
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        My Website Navigation
+    </div>
+
+    <!-- First Navigation Menu -->
+    <div class="nav">
+        
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="clear"></div>
+    
+
+    <!-- Second Navigation Menu -->
+    <div class="nav2" style="margin-left:20px;">
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Messages</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <div class="clear"></div>
+      <div style=" position:fixed; bottom: 10px; left: 50%;">
+    <p>Anurag bhadana</p>
+    <p>CSE 14</p>
+    <p>2025B01011085</p>
+  </div>  
+
+</body>
+</html>
