@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    background-color: grey;
+    height: 60px;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+.navbar-logo {
+    background-image: url("logo.png");
+    height: 60px;
+    width: 70px;
+    background-size: cover;
+}
+
+.navbar-search {
+    display: flex;
+    
+    height: 50px;
+    width: 600px;
+    background-color: pink;
+}
+
+.search-input {
+    width: 500px;
+    height: 50px;
+
+}
+.greeting {
+    font-weight: 700;
+}
+.Box1 {
+    
+}
