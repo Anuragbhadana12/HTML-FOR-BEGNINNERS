@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>student registration form</title>
+        <style>
+            .style-hr
+            {
+                width: 50%;
+                height: 5px;
+                border: none;
+                margin-left: auto;
+                margin-right: auto;
+                background-color:grey;
+            }
+        </style>        
+    </head>
+    <body>
+        <h1 style="text-align: center;">Student Registration Form</h1>
+        <hr class="style-hr">
+        <form method="post" action="submit.page">
+            
+            <label for="full name">Full Name: </label>
+            <input type="text" name="full name" autocomplete="off" autofocus placeholder="Enter your name" id="full name" required>                
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" autocomplete="off" autofocus placeholder="Enter your email address" id="email" required>
+            <br><br>
+            <label for="password">Password: </label>
+            <input type="password" name="password" placeholder="Enter password" autocomplete="off" autofocus id="password" required>
+            <br><br>
+            <label for="gender">Gender: </label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+            <br><br>
+            <label for="course">Course: </label>
+            <select name="course" id="course">
+                <option value="" >--Select Course--</option>
+                <option value="b.tech">b.tech</option>
+                <option value="b.sc">b.sc</option>
+                <option value="M.tech">M.tech</option>
+                <option value="B.A">B.A</option>
+            </select>
+            <br><br>
+            <label for="contact">Contact No: </label>
+            <input type="tel" name="contact no" id="contact" autocomplete="off" autofocus placeholder="Enter your number" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
+            <br><br>
+            <label for="Address">Address: </label><br>
+            <textarea id="Address" name="address">
+                
+            </textarea>
+            <br><br>
+            <button>Register</button>
+            <input type="reset" value="Reset">
+            <br><br>
+            <hr class="style-hr">
+            <p style="text-align: center;">&#169; Student Registration Portal</p>
+            
+
+
+            
+        </form>
+    </body>
+</html>
