@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Performance Management System</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Add Student</h2>
+
+        <input type="text" id="name" placeholder="Student Name">
+
+        <input type="number" id="math" placeholder="Math Marks">
+
+        <input type="number" id="science" placeholder="Science Marks">
+
+        <input type="number" id="english" placeholder="English Marks">
+
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <div class="card stats">
+        <h2>Statistics</h2>
+        <p>Total Students: <span id="totalStudents">0</span></p>
+        <p>Average Percentage: <span id="avgPercent">0</span>%</p>
+    </div>
+
+    <div class="card">
+        <h2>Search Student</h2>
+        <input type="text" id="search" placeholder="Search by name">
+    </div>
+
+    <div class="card">
+        <h2>Student Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Math</th>
+                    <th>Science</th>
+                    <th>English</th>
+                    <th>%</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable">
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
